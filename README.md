@@ -2,12 +2,12 @@
 
 Place given file in that place where you want to setup your project
 
-This Program Creates:
-ENV
-Install Requirements
-Project
-App 
-And Add app name in settings.py automatic 
-And Created Migrations
+This Program Create:
+1. ENV
+2. Install Requirements
+3. Project
+4. App 
+5. Add app name in settings.py automatic 
+6. Create Migrations
 This Program Created By 
 Proud Wadhwa
