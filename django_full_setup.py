@@ -19,6 +19,7 @@ def editsettings(project, app):
 
     writing_file = open(file, "w")
     writing_file.write(new_file_content)
+
     writing_file.close()   
 
 print('This Program only Supports Powershell or Termial available in windows 10, 11 and linux respectively.')
@@ -30,6 +31,8 @@ yon = input('Start Program by typing yes: ')
 if yon == 'yes':
     print('--- Installing Requirements ---')
     os.system('python3 -m pip install --upgrade pip && pip install  virtualenv')
+    path = input('Where you want to Create Your Django project Enter Full Path: ')
+    os.chdir(path)
     print('\n --- Your Env Name would be decided by this program using your project name ---')
     project_name = input('Enter Project Name: ')
     env_name = project_name + '_env'
@@ -58,5 +61,5 @@ if yon == 'yes':
     os.system('python3 manage.py makemigrations')
     os.system('python3 manage.py migrate')
 
-    print('\033[1;32;40m \n This Program Created/Done: \n ENV {env} \n Installed Requirements \n Project {project} \n App: {app} \n And Added app name in settings.py \n And Created Migrations \n Thanks For Using This Program Created By \n Proud Wadhwa').format(env=env_name, project=project_name, app=app_name)
+    print('\033[1;32;40m \n This Program Created/Done: \n ENV {env} \n Installed Requirements \n Project: {project} \n App: {app} \n Added app name in settings.py \n And Created Migrations \n Thanks For Using This Program Created By \n Proud Wadhwa'.format(env=env_name, project=project_name, app=app_name))
     
