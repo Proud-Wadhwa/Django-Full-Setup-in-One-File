@@ -15,6 +15,5 @@ To Run this program:
 1.Download This repo
 2.Navigate Terminal to This File
 3.Run python3 django_full_setup.py.
-Note This Program is only suitable only for Windows 10, 11 and all Linux Distribution.
-If you are using Windows 10 you might not able to find powershell So for using this program follow the below given steps: 
-Press Windows+R to open the Run dialog box, and then type “powershell” in the text box. You can either click “OK” and navigate your powershell to this file location
+
+# Created By Proud Wadhwa
