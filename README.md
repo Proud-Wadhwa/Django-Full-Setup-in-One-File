@@ -9,5 +9,5 @@ This Program Create:
 4. App 
 5. Add app name in settings.py automatic 
 6. Create Migrations
-This Program Created By 
-# Proud Wadhwa
+
+# This Program Created By Proud Wadhwa
