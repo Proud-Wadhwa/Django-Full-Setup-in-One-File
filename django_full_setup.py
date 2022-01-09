@@ -40,10 +40,10 @@ if yon == 'yes':
         print("\033[1;33;40m Warning: You Might Have ExecutionPolicy \n For That Run Windows Powershell as Administrator and then type command: 'Set-ExecutionPolicy RemoteSigned' and Type Y in capital \n")
         done = input('If Done Type yes or enter: ')
         print('\033[1;37;40m Policy Accepted Done \n')
-        env_created = env_name + '/Script/S'
+        env_created = path + '/' + env_name + '/Scripts/S'
     if osys == 'Linux':
         os.system('virtualenv {env_name}'.format(env_name=env_name))
-        env_created = env_name + '/bin/S'
+        env_created = path + '/' + env_name + '/bin/S'
     env = str(os.path.dirname(env_created)).format(env_name=env_name) + '/activate_this.py'
     with open(env) as f:
         code = compile(f.read(), env, 'exec')
@@ -59,4 +59,3 @@ if yon == 'yes':
     os.system('python3 manage.py migrate')
 
     print('\033[1;32;40m \n This Program Created/Done: \n ENV {env} \n Installed Requirements \n Project: {project} \n App: {app} \n Added app name in settings.py \n And Created Migrations \n Thanks For Using This Program Created By \n Proud Wadhwa'.format(env=env_name, project=project_name, app=app_name))
-    
