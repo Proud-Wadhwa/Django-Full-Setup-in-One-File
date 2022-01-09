@@ -9,4 +9,5 @@ Project
 App 
 And Add app name in settings.py automatic 
 And Created Migrations
-This Program Created By Proud Wadhwa
+This Program Created By 
+Proud Wadhwa
