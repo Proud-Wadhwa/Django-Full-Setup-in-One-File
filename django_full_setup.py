@@ -22,10 +22,7 @@ def editsettings(project, app):
 
     writing_file.close()   
 
-print('This Program only Supports Powershell or Termial available in windows 10, 11 and linux respectively.')
-print('If you are using Windows 10 you might not able to find powershell So for using this program follow the below given steps: ')
-print('Press Windows+R to open the Run dialog box, and then type “powershell” in the text box. You can either click “OK” and navigate your powershell to this file location')
-print('--- Launch ---')
+print('\n --- Launch ---')
 yon = input('Start Program by typing yes: ')
 
 if yon == 'yes':
